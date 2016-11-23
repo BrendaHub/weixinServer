@@ -2,32 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25faeaae-7570-40b6-a882-d04297b03546" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/weixin_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/weixin_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/doc/weixinServer/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/doc/weixinServer/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/com/doc/bean/TextMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin-web/weixin-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixinServer.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/doc/weixinServer/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/doc/weixinServer/AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/classes/com/doc/Servlet/weixinServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/classes/com/doc/com/doc/bean/TextMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/classes/com/doc/util/CheckUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/classes/com/doc/util/MessageUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/classes/com/doc/Servlet/weixinServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/classes/com/doc/com/doc/bean/TextMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/classes/com/doc/util/CheckUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/classes/com/doc/util/MessageUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/lib/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/lib/xstream-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weixin-web/target/weixin-web/index.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java" afterPath="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java" />
     </list>
     <ignored path="weixinServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,11 +71,11 @@
       <file leaf-file-name="MessageUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="644">
+              <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#596#612#0" expanded="true" />
+                <element signature="e#1256#1272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +129,8 @@
       <file leaf-file-name="weixinServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+            <state relative-caret-position="494">
+              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,8 +141,8 @@
       <file leaf-file-name="CheckUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,9 +171,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java" />
         <option value="$PROJECT_DIR$/weixin-web/pom.xml" />
         <option value="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/com/doc/bean/TextMessage.java" />
+        <option value="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java" />
         <option value="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java" />
         <option value="$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java" />
       </list>
@@ -208,9 +205,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="937" />
-    <option name="y" value="23" />
-    <option name="width" value="1529" />
+    <option name="x" value="994" />
+    <option name="y" value="124" />
+    <option name="width" value="1403" />
     <option name="height" value="1353" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -843,16 +840,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479868853969</updated>
-      <workItem from="1479868858616" duration="7088000" />
+      <workItem from="1479868858616" duration="8530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7088000" />
+    <option name="totallyTimeSpent" value="8530000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="937" y="23" width="1529" height="1353" extended-state="0" />
-    <editor active="false" />
+    <frame x="994" y="124" width="1403" height="1353" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -868,7 +865,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24264225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1746258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -923,16 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weixin-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -974,21 +961,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java">
+    <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/CheckUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#596#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/util/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1256#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin-web/src/main/java/com/doc/Servlet/weixinServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        <state relative-caret-position="494">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -3,6 +3,7 @@ package com.doc.Servlet;
 import com.doc.com.doc.bean.TextMessage;
 import com.doc.util.CheckUtil;
 import com.doc.util.MessageUtil;
+import com.sun.corba.se.impl.protocol.giopmsgheaders.Message;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -56,7 +57,7 @@ public class weixinServlet extends HttpServlet {
 
             //根据msgType 判断消息类型
             String message = null;
-            if("text".equals(msgType)){
+            if(MessageUtil.MESSAGE_TEXT.equals(msgType)){
                 TextMessage text = new TextMessage();
                 text.setFromUserName(toUserName);
                 text.setToUserName(fromUserName);
@@ -65,6 +66,13 @@ public class weixinServlet extends HttpServlet {
                 text.setContent("您发送的消息是："+content);
                 message = MessageUtil.textToXML(text);
                 out.print(message);
+            }else if(MessageUtil.MESSAGE_EVENT.equals(msgType)){
+                String eventType = map.get("Event");
+                //如果初次关注
+                if(MessageUtil.MESSAGE_SUBSCRIBE.equals(eventType)){
+                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.menuText());
+                    ???
+                }
             }
         }catch(Exception e){
             e.printStackTrace();
