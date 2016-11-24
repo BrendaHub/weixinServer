@@ -1,6 +1,8 @@
 package com.doc.util;
 
+import com.doc.com.doc.bean.NewsMessage;
 import com.doc.com.doc.bean.TextMessage;
+import com.doc.com.doc.bean.subNews;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.basic.StringBufferConverter;
 import org.dom4j.Document;
@@ -32,6 +34,7 @@ public class MessageUtil {
     public static final String MESSAGE_UNSUBSCRIBE = "unsubscribe";
     public static final String MESSAGE_CLICK = "CLICK";
     public static final String MESSAGE_VIEW = "VIEW";
+    public static final String MESSAGE_NEWS = "NEWS";
 
     //将xml 转换成 map集合对象
     public static Map<String, String> xmlToMap(HttpServletRequest request) {
@@ -102,5 +105,37 @@ public class MessageUtil {
         StringBuffer sb = new StringBuffer();
         sb.append("慕课网是一家从事互联网在线教学的网络教育企业。秉承“开拓、创新、公平、分享”的精神，将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站在线互动学习的教育品牌。");
         return sb.toString();
+    }
+
+    //微信的图文消息对象转换成xml
+    public static String newsMessageToXml(NewsMessage newsMessage){
+        XStream xstream = new XStream();
+        xstream.alias("xml", newsMessage.getClass());
+        xstream.alias("item", new subNews().getClass());
+        return xstream.toXML(newsMessage);
+    }
+    //初始化图文消息
+    public static String initNewsMessage(String toUserName, String fromUserName){
+        String message = null;
+        List<subNews> newsList = new ArrayList<>();
+        NewsMessage newsMessage = new NewsMessage();
+
+        subNews news = new subNews();
+        news.setTitle("默克尔介绍");
+        news.setDescription("描述内容， 描述内空");
+        news.setPicUrl("##");
+        news.setUrl("www.doctor330.com");
+
+        newsList.add(news);
+
+        newsMessage.setToUserName(fromUserName);
+        newsMessage.setFromUserName(toUserName);
+
+        newsMessage.setCreateTime(new Date().getTime());
+        newsMessage.setMsgType(MessageUtil.MESSAGE_NEWS);
+
+
+        return message;
+
     }
 }
