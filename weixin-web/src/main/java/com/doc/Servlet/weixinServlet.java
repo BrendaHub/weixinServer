@@ -58,22 +58,30 @@ public class weixinServlet extends HttpServlet {
             //根据msgType 判断消息类型
             String message = null;
             if(MessageUtil.MESSAGE_TEXT.equals(msgType)){
-                TextMessage text = new TextMessage();
-                text.setFromUserName(toUserName);
-                text.setToUserName(fromUserName);
-                text.setMsgType("text");
-                text.setCreateTime(String.valueOf(new Date().getTime()));
-                text.setContent("您发送的消息是："+content);
-                message = MessageUtil.textToXML(text);
-                out.print(message);
+                if("1".equals(content.trim())){
+                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.firstMenu());
+                }else if("2".equals(content.trim())){
+                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.secondMenu());
+                }else if("?".equals(content.trim()) || "？".equals(content.trim())){
+                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.menuText());
+                }else{
+                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.menuText());
+                }
+//                TextMessage text = new TextMessage();
+//                text.setFromUserName(toUserName);
+//                text.setToUserName(fromUserName);
+//                text.setMsgType("text");
+//                text.setCreateTime(String.valueOf(new Date().getTime()));
+//                text.setContent("您发送的消息是："+content);
+//                message = MessageUtil.textToXML(text);
             }else if(MessageUtil.MESSAGE_EVENT.equals(msgType)){
                 String eventType = map.get("Event");
                 //如果初次关注
                 if(MessageUtil.MESSAGE_SUBSCRIBE.equals(eventType)){
                     message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.menuText());
-                    ???
                 }
             }
+            out.print(message);
         }catch(Exception e){
             e.printStackTrace();
         }finally {

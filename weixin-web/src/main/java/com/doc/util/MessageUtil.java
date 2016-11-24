@@ -2,6 +2,7 @@ package com.doc.util;
 
 import com.doc.com.doc.bean.TextMessage;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.converters.basic.StringBufferConverter;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -90,6 +91,16 @@ public class MessageUtil {
         sb.append("1、课程介绍\n");
         sb.append("2、慕课网介绍\n");
         sb.append("回复 ？ 调出此菜单。");
+        return sb.toString();
+    }
+    public static String firstMenu(){
+        StringBuffer sb = new StringBuffer();
+        sb.append("本套课程介绍微信公众号开发， 主要涉及公众号介绍，编辑模式介绍，开发模式价绍等。");
+        return sb.toString();
+    }
+    public static String secondMenu(){
+        StringBuffer sb = new StringBuffer();
+        sb.append("慕课网是一家从事互联网在线教学的网络教育企业。秉承“开拓、创新、公平、分享”的精神，将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站在线互动学习的教育品牌。");
         return sb.toString();
     }
 }
