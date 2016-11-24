@@ -55,13 +55,17 @@ public class weixinServlet extends HttpServlet {
             String content = map.get("Content");
             String msgId = map.get("MsgId");
 
+            System.out.print("msgType=" +msgType);
+
             //根据msgType 判断消息类型
             String message = null;
             if(MessageUtil.MESSAGE_TEXT.equals(msgType)){
+                System.out.print("content.trim()=" +content.trim());
                 if("1".equals(content.trim())){
                     message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.firstMenu());
-                }else if("2".equals(content.trim())){
-                    message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.secondMenu());
+                }else if("2".equals(content.trim())){//输入2 后，返回一条图文消息
+                    message = MessageUtil.initNewsMessage(toUserName, fromUserName);
+                    System.out.print("message = " + message);
                 }else if("?".equals(content.trim()) || "？".equals(content.trim())){
                     message = MessageUtil.initText(toUserName, fromUserName, MessageUtil.menuText());
                 }else{

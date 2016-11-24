@@ -25,9 +25,9 @@
         <module name="weixin-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="weixin-web" target="1.5" />
-      <module name="weixinServer" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="weixin-web" target="1.8" />
+      <module name="weixinServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

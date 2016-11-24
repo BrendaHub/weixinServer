@@ -9,7 +9,7 @@ import java.util.List;
 public class NewsMessage extends  BaseMessage {
 
     private int ArticleCount;
-    private List<subNews> Ariicles;
+    private List<subNews> Articles;
 
     public int getArticleCount() {
         return ArticleCount;
@@ -20,10 +20,10 @@ public class NewsMessage extends  BaseMessage {
     }
 
     public List<subNews> getAriicles() {
-        return Ariicles;
+        return Articles;
     }
 
     public void setAriicles(List<subNews> ariicles) {
-        Ariicles = ariicles;
+        Articles = ariicles;
     }
 }

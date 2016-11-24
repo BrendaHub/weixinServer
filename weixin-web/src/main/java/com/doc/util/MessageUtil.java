@@ -12,10 +12,7 @@ import org.dom4j.io.SAXReader;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 微信处理XML请求参数的工具类，
@@ -34,7 +31,7 @@ public class MessageUtil {
     public static final String MESSAGE_UNSUBSCRIBE = "unsubscribe";
     public static final String MESSAGE_CLICK = "CLICK";
     public static final String MESSAGE_VIEW = "VIEW";
-    public static final String MESSAGE_NEWS = "NEWS";
+    public static final String MESSAGE_NEWS = "news";
 
     //将xml 转换成 map集合对象
     public static Map<String, String> xmlToMap(HttpServletRequest request) {
@@ -114,26 +111,36 @@ public class MessageUtil {
         xstream.alias("item", new subNews().getClass());
         return xstream.toXML(newsMessage);
     }
-    //初始化图文消息
+    //初始化图文消息, 一个图文消息拼接完成，并将其转换成了对应协议的xml 格式
     public static String initNewsMessage(String toUserName, String fromUserName){
         String message = null;
-        List<subNews> newsList = new ArrayList<>();
+        List<subNews> newsList = new ArrayList<subNews>();
         NewsMessage newsMessage = new NewsMessage();
 
         subNews news = new subNews();
         news.setTitle("默克尔介绍");
         news.setDescription("描述内容， 描述内空");
-        news.setPicUrl("##");
+        news.setPicUrl("http://kude8.free.natapp.cc/images/imooc.jpg");
         news.setUrl("www.doctor330.com");
 
         newsList.add(news);
 
+        subNews news1 = new subNews();
+        news1.setTitle("默克尔介绍2");
+        news1.setDescription("今天软件志在豆瓣闲逛是看到一篇关于Google Chrome快捷键的帖子,发现很全面,所以就转之。下面将快捷键分为以下几类进行阐述:Chrome窗口和标签页快捷键...");
+        news1.setPicUrl("http://kude8.free.natapp.cc/images/imooc.jpg");
+        news1.setUrl("www.doctor330.com");
+        newsList.add(news1);
+
         newsMessage.setToUserName(fromUserName);
         newsMessage.setFromUserName(toUserName);
 
-        newsMessage.setCreateTime(new Date().getTime());
-        newsMessage.setMsgType(MessageUtil.MESSAGE_NEWS);
+        newsMessage.setCreateTime(String.valueOf(new Date().getTime()));
+        newsMessage.setMsgType(MESSAGE_NEWS);
+        newsMessage.setAriicles(newsList);
+        newsMessage.setArticleCount(newsList.size());
 
+        message = newsMessageToXml(newsMessage);
 
         return message;
 
